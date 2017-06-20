@@ -6,6 +6,7 @@
      <title>Etch-A-Sketch</title>
      <meta name="description" content="DESCRIPTION">
     <link rel="stylesheet" href="styles/main.css">
+    <script src="./scripts/jquery-3.2.1.min.js"></script>
 
      <!--[if lt IE 9]>
        <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -31,17 +32,19 @@
      <div class="board-controls">
 
       <div class="resize">
-        <p>Resize</p><br />
-        <input type="text"></input>
+
+        <input id="resize-number" type="text"></input>
+        <button type="button">Resize</button>
       </div>
-      <div class="on-click">
-        <p>On-Click</p>
-      </div>
-      <div class="pen-down">
-        <p>Pen-Down</p>
+      <div class="mouse-options">
+        <input id="pendown" checked="yes" type="checkbox">Pen Down </br>
+        <input id="clickcolor" checked="yes" type="checkbox">Click to Color
       </div>
       <div class="color-control">
-        <p>Colors</p>
+
+        <input id= "selectcolor" checked="yes" name ="colorscheme" type="radio">Select Color<br/>
+        <input id= "templatecolor" name ="colorscheme" type="radio">From Template<br/>
+        <input id= "randomcolor" name ="colorscheme" type="radio">Random
       </div>
 
      </div>

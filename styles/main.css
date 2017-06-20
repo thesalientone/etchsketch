@@ -47,14 +47,23 @@
   background-color: lightblue;
 }
 
-.resize, .on-click, .pen-down, .color-control {
-  width: 22.3%;
-  height: 80px;
-  padding: 5px;
-  display: inline-block;
+.resize, .mouse-options, .color-control {
 
+  height: 100px;
+
+
+  display: inline-block;
+  padding: 5px;
   border: 1px solid blue;
 }
+
+  .resize, .mouse-options {
+    width: 33%;
+
+  }
+  .color-control {
+    width: auto;
+  }
 
 
 .bottom {

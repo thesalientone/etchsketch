@@ -6,8 +6,9 @@ $(document).ready(function(){
   var $pendown = $("#pendown");
   var $clickcolor = $("#clickcolor");
   var $selectcolor = $("#selectcolor");
-  var $selectcolor = $("#templatecolor");
-  var $selectcolor = $("#randomcolor");
+  var $templatecolor = $("#templatecolor");
+  var $randomcolor = $("#randomcolor");
+  var colorscheme = "selectcolor"
 
 
   function createDivs(number) {
@@ -29,7 +30,7 @@ $(document).ready(function(){
     }
 
     $('.sketchboard-container').append("</div");
-    $('.sketchboard-cell').css({'height': newDimensionText, 'width':newDimensionText})
+    $('.sketchboard-cell').css({'height': newDimensionText, 'width':newDimensionText, "margin-bottom": -number.toString()})
 
   }
   function createIds(number) {
@@ -47,7 +48,45 @@ $(document).ready(function(){
     return idList
   }
 
-createDivs(2);
 
+createDivs(7);
+$('.sketchboard-cell').click(function(){
+
+  colorCells($(this));
+
+})
+
+
+$('.sketchboard-cell').hover(function(){
+  if($("#pendown").is(":checked")) {
+    colorCells($(this));
+  }
+
+})
+
+$('input:radio[name=colorscheme]').click(function(){
+    colorscheme = $(this).attr("id");
+    alert(colorscheme);
+
+})
+
+
+
+  function colorCells(cellObject) {
+
+    switch(colorscheme)  {
+     case "selectcolor":
+       cellObject.css("background-color", "red");
+     break;
+     case "randomcolor":
+       colorList = [];
+       for(i = 0; i <3; i ++) {
+          colorList[i] = Math.floor(Math.random() * 256)
+       }
+       var randomColor = "rgb(" + colorList[0] + "," + colorList[1] + "," + colorList[2] + ")"
+       cellObject.css("background-color", randomColor)
+     break;
+   }
+  }
 
 })

@@ -1,6 +1,38 @@
+
 .title {
+
+  background-color: lightblue;
+
+  text-align: center;
+}
+
+.sketchboard-container {
+
+  height: 500px;
+  background-color: blue;
+}
+
+.controls {
+  height: 200px;
+  margin-top: 5%;
+  background-color: lightblue;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0px;
+  height: 100px;
+  border: 2px solid blue;
   margin-left: 30%;
   margin-right: 30%;
-  background-color: lightblue;
   width: auto;
+
+
+}
+
+.controls, .sketchboard-container, .title {
+  margin-left:30%;
+  margin-right:30%;
+  width: auto;
+
 }

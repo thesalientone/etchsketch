@@ -8,10 +8,22 @@
 
 .sketchboard-container {
 
-  height: 500px;
-  background-color: blue;
-}
 
+  height: 500px;
+  width: 500px;
+  background-color: blue;
+
+}
+.sketchboard-cell {
+
+  background-color: white;
+  border: 1px solid green;
+  margin: 0;
+  padding: 0;
+  height: 500px;
+  width: 500px;
+
+}
 .dial-buttons {
   height: 100px;
   margin-top: 5%;
@@ -79,7 +91,7 @@
 }
 
 
-.board-controls, .sketchboard-container, .title, .dial-buttons {
+.board-controls, .title, .dial-buttons {
   margin-left:30%;
   margin-right:30%;
   width: auto;

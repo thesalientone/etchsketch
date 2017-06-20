@@ -12,11 +12,50 @@
   background-color: blue;
 }
 
-.controls {
-  height: 200px;
+.dial-buttons {
+  height: 100px;
+  margin-top: 5%;
+  b
+
+}
+
+.left-right {
+  float: left;
+
+}
+.up-down {
+  float: right;
+}
+.left-right, .up-down {
+  background-color: lightblue;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.dial-position {
+  height: 20px;
+  position: relative;
+  left: 50px;
+  background-color: blue;
+  width: 2px;
+
+}
+.board-controls {
+  height: 100px;
   margin-top: 5%;
   background-color: lightblue;
 }
+
+.resize, .on-click, .pen-down, .color-control {
+  width: 22.3%;
+  height: 80px;
+  padding: 5px;
+  display: inline-block;
+
+  border: 1px solid blue;
+}
+
 
 .bottom {
   position: absolute;
@@ -25,12 +64,13 @@
   border: 2px solid blue;
   margin-left: 30%;
   margin-right: 30%;
-  width: auto;
+  width: 40%;
 
 
 }
 
-.controls, .sketchboard-container, .title {
+
+.board-controls, .sketchboard-container, .title, .dial-buttons {
   margin-left:30%;
   margin-right:30%;
   width: auto;

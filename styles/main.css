@@ -17,10 +17,11 @@ body {
   width: 500px;
 
 
+
 }
 .sketchboard-cell {
 
-  background-color: white;
+  background-color: grey;
   border: 0px ;
   margin-bottom: -3px;
   padding: 0px !important;

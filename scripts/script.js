@@ -69,7 +69,15 @@ $('input:radio[name=colorscheme]').click(function(){
     alert(colorscheme);
 
 })
+$(":button").click(function() {
+    var resize_number = $("#resize-number").val()
+    if(Number.isInteger(parseInt(resize_number))) {
+      createDivs(resize_number);
+    } else {
+      alert("Please enter an integer number to resize.")
+    }
 
+})
 
 
   function colorCells(cellObject) {

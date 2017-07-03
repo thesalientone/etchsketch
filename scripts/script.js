@@ -31,7 +31,7 @@ $(document).ready(function(){
 
     $('.sketchboard-container').append("</div");
     $('.sketchboard-cell').css({'height': newDimensionText, 'width':newDimensionText, "margin-bottom": -number.toString()})
-
+    
   }
   function createIds(number) {
 
